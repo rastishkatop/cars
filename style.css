@@ -1,0 +1,527 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-warning{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat-Thin-100', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+p {
+    font-weight: 300;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+header p {
+    color: #111;
+}
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(lambo.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 480px){
+
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 3.7em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner .content p{
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background:#ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transition: 0.72s;
+}
+
+.btn:hover{
+    letter-spacing: 5px; transform: scale(1.08) ; transition: 0.16s;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 60px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky p {
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+    
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+header.sticky .navigation li a{
+    color: #111;
+}
+
+header.sticky .navigation li a p{
+    color: #111;
+}
+
+
+header .navigation li a:hover{
+    color: #ff0157; 
+}
+
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.titleText{
+    color: #ff0157;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products {
+    background-color: #111;
+
+}
+
+.products .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.products .content .box{
+    width: 350px;
+    margin: 20px;
+    border: 15px solid #fff;
+    border: 15px solid rgba(56, 56, 56, 0.644);
+}
+
+.products .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.products .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products .content .box .text{
+    padding: 15px 0 5px;
+    clear: both;
+}
+
+.products .content .box .text h3{
+    font-weight: 300;
+    color: #fff;
+}
+
+
+/* FAQ Section and Accordion */
+.faq .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+.accordion.active, .accordion:hover {
+    background-color: #eee;
+  }
+  
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.accordion.active:after {
+    content: "\2212";
+  }
+
+.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+footer {
+    background-color: #c0c6c8;
+    padding: 20px;
+    text-align: center;
+	
+}
+
+
+  /* Responsive Design */
+
+
+  @media (max-width: 991px) {
+      .header-warning{
+          padding: 4px;
+          font-size: 8px;
+      }
+
+      header p {
+          color: #111;
+      }
+
+      header.sticky p {
+          color: #111;
+      }
+
+      header,
+      header.sticky {
+          padding: 20px 20px;
+      }
+
+      header .navigation {
+          display: none;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      header .navigation.active {
+          width: 100%;
+          height: calc(100%-68px);
+          position: fixed;
+          top: 68px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: #fff;
+          
+      }
+
+      header .navigation li {
+          margin-left: 0;
+      }
+
+      header .navigation li a {
+          color: #111;
+          font-size: 1em;
+          line-height: 2em;
+      }
+
+      .menuToggle {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background: url(/img/outline_menu_white_24dp.png);
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+      }
+
+      .menuToggle.active {
+          background: url(/img/outline_close_white_24dp.png);
+          background-size: 35px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+      }
+
+      header.sticky .menuToggle {
+          filter: invert(1);
+      }
+
+      section {
+          padding: 20px;
+      }
+
+      .banner .content h2 {
+          font-size: 3em;
+          color: #fff;
+      }
+
+      .row {
+          flex-direction: column;
+      }
+
+      .row .col50 {
+          position: relative;
+          width: 100%;
+      }
+
+      .row .col50 .imgBx {
+          height: 300px;
+          margin-top: 20px;
+      }
+
+      .menu .content {
+          margin-top: 20px;
+      }
+
+      .menu .content .box {
+          margin: 10px;
+      }
+
+      .menu .content .box .imgBx {
+          height: 260px;
+      }
+
+      .title {
+          text-align: center;
+      }
+
+      .titleText {
+          font-size: 1.8em;
+          line-height: 1.5em;
+          margin-bottom: 15px;
+          font-weight: 300;
+      }
+
+      .contact a {
+          font-size: 2em;
+          line-height: 1.5em;
+      }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(lamboiphone.jpg);
+        background-size: cover;
+    }
+
+    .img-slider{
+        height: 200px;
+    }
+
+    
+}
+
+/* Slider CSS */
+
+/* Slideshow container */
+
+table {
+	color: #fff;
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px;
+	
+}
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+
+
+.account {
+	background-color: #111;
+}
+
+.infoacc {
+	color: #fff;
+}
+
+.contact {
+	background-color: #111;
+}
+
+.inforole {
+	color: #fff;
+}
+
+.wishlist {
+    background-color: #111;
+}
+
+input[type="submit"] {
+	height: 25px;
+	width: 10%;
+	align-items: center;
+	margin: 0 auto;
+	background-color: #808080;
+	border-radius: 5px;
+}
+
+textarea {
+   resize: none;
+}
+
+
+
