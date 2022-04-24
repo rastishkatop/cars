@@ -32,7 +32,7 @@ echo <<<_END
 			</div>
 			
 			<div class="right">
-				<a href="reg.php"><image class="social-signin login">Sign in</button></a><i></i>
+				<a href="reg.php">Sign in</a>
 			</div>
 	
  		</div>
