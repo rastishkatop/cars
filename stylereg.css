@@ -1,0 +1,92 @@
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+#loginbox {
+    
+	justify-content: space-around;
+	align-items: center;
+	flex-direction:row;
+	margin: 5% auto;
+    max-width: 500px;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 40%);
+
+
+}
+
+.right {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+	
+	margin-top: 15px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+body {
+	
+	background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.5) ), url(lambo.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+input[type="text"],input[type="password"]{
+	margin-bottom: 10px;
+	height: 30px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+input[type="submit"]{
+	height: 25px;
+	width: 30%;
+	align-items: center;
+	margin: 0 auto;
+	background-color: #808080;
+	border-radius: 5px;
+}
+
+h1{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: 'Poppins',sans-serif;
+}
+
+i{
+	
+	font-style: normal;
+}
+
+a{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color:blue;
+	
+}
+
+html {
+	height:100vh;
+}
+
+
+ 
