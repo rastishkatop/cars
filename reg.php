@@ -33,7 +33,7 @@
     	    
     	    <div class="right">
     
-			<a href="login.php">  <image class="social-signin login">Log in</image> </a>
+			<a href="login.php">Log in</a>
 			
             </div>
 	    </div>    
