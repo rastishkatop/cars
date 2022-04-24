@@ -31,7 +31,7 @@
     	    
     	    <div class="right">
     
-			<a href="login.php">  <image class="social-signin login">Log in</image> </a><i></i>
+			<a href="login.php">  <image class="social-signin login">Log in</image> </a>
 			
             </div>
 	    </div>    
