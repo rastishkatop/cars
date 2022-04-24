@@ -1,3 +1,5 @@
+<?php
+
 <html>
 	<script type="text/javascript" src="scr.js"></script>
 <head>
@@ -38,3 +40,4 @@
         </form>
     </body>
 </html>
+?>
