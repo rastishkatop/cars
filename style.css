@@ -479,7 +479,9 @@ th {
 td {
   letter-spacing: 1px;
 }
-
+body{
+    background-color: orange;
+}
 tbody td {
   text-align: center;
 }
